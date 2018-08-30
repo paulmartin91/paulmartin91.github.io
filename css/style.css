@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+#topnav {
+  height: 52px;
+  background-color: white;
+  border: solid 2px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 810px;
+  
+}
+
+.navtabs {
+  width: 202.5px;
+  min-width: 135pxx;
+  height: 100%;
+  border: solid 2px;
+  border-top: transparent;
+  border-bottom: transparent;
+  text-align: center;
+  padding-top: 15px;
+  text-decoration: none;
+  color: black;
+  cursor: default;
+  background-color: white;
+  }
+
+.navtabs a:hover, a:visited, a:link, a:active {
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.sticky + .main {
+  padding-top: 60px;
+}
+
+.header {
+  height: 200px;
+  background-color: white;
+  border: solid;
+  display: flex;
+  justify-content: center;
+  min-width: 810px;
+  
+  }
+
+.title-box {
+  height: 100%;
+  width: 800px;
+  text-align: center;
+}
+
+.title-box h1, h2{
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 3em;
+}
+
+.title-box h2 {
+  font-size:1.25em;
+}
+
+.pic1 {
+  background-color: white;
+  border: solid;
+  background-image: url("http://i1262.photobucket.com/albums/ii616/paulmartin91/IMG_6889_zpssyah8fi1.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 500px;
+  max-height: 500px;
+  background-position: center;
+  background-size: cover;
+  margin-left: 0px;
+  position: ;
+}
+
+.text1 {
+  height: 300px;
+  background-color: white;
+  border: solid;
+  padding-left: 10px;
+}
+
+.about {
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+  font-size: 1.2em;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+}
+
+.about h1 {
+ font-weight: normal;
+}
+  
+.pic2 {
+  border: solid;
+  background-image: url("https://i.imgur.com/tI74vi9.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.text2 {
+  height: 200px;
+  background-color: white;
+  border: solid;
+}
+
+.pic2 {
+  background-image: url("http://i1262.photobucket.com/albums/ii616/paulmartin91/IMG_9701_zps7nycwjou.jpg");
+  border: solid;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 700px;
+  background-position: center;
+  background-size: cover;
+}
+
+.projects-all {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1160px;
+  margin: auto;
+  
+}
+
+.projects-main {
+  height: 380px;
+  width: 350px;
+  background-color: white;
+  border: solid;
+  margin: 50px 0px 50px 0px;
+}
+
+.projects-pic {
+  height: 160px;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  border-bottom: solid;
+}
+
+.projects-pic img {
+  transition: 0.4s;
+}
+  
+.projects-pic img:hover {
+    transform: scale(1.2); 
+}
+
+.projects-buffer {
+  height: 10px;
+  width: 100%;
+  background-color: white;
+  border: ;
+}
+
+.projects-desc {
+  height: 100px;
+  width: 100%;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: soild;
+  font-size: 1em;
+}
+
+#test {
+    background-image: url("https://i.imgur.com/tI74vi9.jpg");
+}
+
+.text3 {
+  height: 200px;
+  background-color: white;
+  border: solid;
+}
