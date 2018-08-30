@@ -5,47 +5,59 @@ body {
   font-weight: 300;
 }
 
-#navbar {
-  height: 90px;
-  background-color: rgba(234, 231, 232, 1);
-  border: solid 0px;
+#topnav {
+  height: 52px;
+  background-color: white;
+  border: solid 2px;
   overflow: hidden;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   min-width: 810px;
-  position: fixed;
+  
 }
 
 .navtabs {
   width: 202.5px;
   min-width: 135pxx;
   height: 100%;
-  border: 0px;
+  border: solid 2px;
   border-top: transparent;
   border-bottom: transparent;
   text-align: center;
+  padding-top: 15px;
   text-decoration: none;
   color: black;
   cursor: default;
   background-color: white;
-  padding-top: 30px;
   }
 
 .navtabs a:hover, a:visited, a:link, a:active {
   font-family: sans-serif;
   letter-spacing: 2px;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1em;
   text-decoration: none;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.sticky + .main {
+  padding-top: 60px;
+}
+
 .header {
-  height: 390px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: ;
+  height: 200px;
+  background-color: white;
+  border: solid;
   display: flex;
   justify-content: center;
+  min-width: 810px;
   
   }
 
@@ -53,7 +65,6 @@ body {
   height: 100%;
   width: 800px;
   text-align: center;
-  padding-top: 90px;
 }
 
 .title-box h1, h2{
@@ -61,7 +72,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 300;
-  font-size: 5em;
+  font-size: 3em;
 }
 
 .title-box h2 {
@@ -70,20 +81,22 @@ body {
 
 .pic1 {
   background-color: white;
-  border: ;
+  border: solid;
   background-image: url("http://i1262.photobucket.com/albums/ii616/paulmartin91/IMG_6889_zpssyah8fi1.jpg");
     background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
-  max-height: 100vh;
+  height: 500px;
+  max-height: 500px;
   background-position: center;
   background-size: cover;
   margin-left: 0px;
+  position: ;
 }
 
 .text1 {
-  height: 600px;
-  border: ;
+  height: 300px;
+  background-color: white;
+  border: solid;
   padding-left: 10px;
 }
 
@@ -91,24 +104,38 @@ body {
   text-align: center;
   max-width: 1000px;
   margin: auto;
-  font-size: 1.8em;
-  padding-top: 100px;
+  font-size: 1.2em;
+  padding-top: 50px;
   padding-bottom: 50px;
+  
 }
 
 .about h1 {
  font-weight: normal;
 }
   
+.pic2 {
+  border: solid;
+  background-image: url("https://i.imgur.com/tI74vi9.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 .text2 {
   height: 200px;
   background-color: white;
-  border: ;
+  border: solid;
 }
 
 .pic2 {
-  border: ;
+  background-image: url("http://i1262.photobucket.com/albums/ii616/paulmartin91/IMG_9701_zps7nycwjou.jpg");
+  border: solid;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 700px;
+  background-position: center;
+  background-size: cover;
 }
 
 .projects-all {
@@ -118,15 +145,14 @@ body {
   align-items: center;
   max-width: 1160px;
   margin: auto;
-   background-color: rgba(234, 231, 232, 1);
-  margin-bottom: 100px;
+  
 }
 
 .projects-main {
   height: 380px;
   width: 350px;
   background-color: white;
-  border: ;
+  border: solid;
   margin: 50px 0px 50px 0px;
 }
 
@@ -135,7 +161,7 @@ body {
   width: 100%;
   background-color: white;
   overflow: hidden;
-  border-bottom: ;
+  border-bottom: solid;
 }
 
 .projects-pic img {
@@ -153,13 +179,13 @@ body {
   border: ;
 }
 
-.project-tile {
+.projects-desc {
   height: 100px;
   width: 100%;
   padding-top: 5px;
   padding-left: 5px;
   padding-right: 5px;
-  border: ;
+  border: soild;
   font-size: 1em;
 }
 
@@ -168,64 +194,7 @@ body {
 }
 
 .text3 {
-  background-color: white;
-  border: ;
-    background-image: url("http://i1262.photobucket.com/albums/ii616/paulmartin91/IMG_9701_zps7nycwjou.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-background-position: center;
-  background-size: cover;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 0px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-.contact-form {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-  color: white;
-  font-size: 1.5em;
-} 
-
-	#input {
-		background-color: white; 
-		color: black;
-    font-size: 1em;
-	}
-
-.footer {
   height: 200px;
   background-color: white;
-  border: ;
-}
-
-@media (max-width: 600px){
-  .footer {
-  height: 200px;
+  border: solid;
 }
