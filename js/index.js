@@ -1,17 +1,36 @@
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
+//Sidebar
 
-// Get the navbar
-var navbar = document.getElementById("topnav");
+//false = sidebar closed
+var navOpen = false;
+var arrowRotate = 180;
 
-// Get the offset position of the navbar
-var sticky = topnav.offsetTop;
+function toggleNav() {
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    topnav.classList.add("sticky")
-  } else {
-    topnav.classList.remove("sticky");
-  }
+//if closed the button adds 100% to width
+if (navOpen == false) {
+    document.getElementById("mySidenav").style.width = "98%";
+
+//flips the arrow to 180 degrees
+  document.getElementById("arrow").style.transform = "rotate("+ arrowRotate +"deg)";
+  
+//sets the rotation back to 0
+  arrowRotate=0;
+  
+//sets sidebar to open
+  navOpen = true;
+ 
+} else {
+  //if open, the tab returns to 50px width
+    document.getElementById("mySidenav").style.width = "50px";
+  
+//flips the arrow to 0 degrees
+  document.getElementById("arrow").style.transform = "rotate("+ arrowRotate +"deg)";
+  
+//sets the rotation back to 180
+  arrowRotate=180;
+  
+//sets sidebar to closed
+  navOpen = false;
+}
+
 }

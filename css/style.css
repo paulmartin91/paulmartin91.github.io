@@ -1,231 +1,96 @@
 body {
   margin: 0;
-  font-family: sans-serif;
-  letter-spacing: 2px;
-  font-weight: 300;
 }
 
-#navbar {
-  height: 90px;
-  background-color: rgba(234, 231, 232, 1);
-  border: solid 0px;
-  overflow: hidden;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  min-width: 810px;
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    border-left: solid;
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 1s;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/*Landing Page*/
+
+#landingPagePhoto {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 60vw;
+}
+
+#arrow {
+
+}
+
+#landingPagePhoto img {
+  width:100%;
+  margin-left: -600px; 
   position: fixed;
 }
 
-.navtabs {
-  width: 202.5px;
-  min-width: 135pxx;
-  height: 100%;
-  border: 0px;
-  border-top: transparent;
-  border-bottom: transparent;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  cursor: default;
+#landingPageContent {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 40vw;
   background-color: white;
-  padding-top: 30px;
-  }
-
-.navtabs a:hover, a:visited, a:link, a:active {
-  font-family: sans-serif;
-  letter-spacing: 2px;
-  font-weight: 300;
-  font-size: 1.5em;
-  text-decoration: none;
 }
 
-.header {
-  height: 390px;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: ;
-  display: flex;
-  justify-content: center;
-  
-  }
-
-.title-box {
-  height: 100%;
-  width: 800px;
-  text-align: center;
-  padding-top: 90px;
+#landingPageContentBox {
+width: 30vw;
+height: 500px;
+margin-top: 150px;
+margin-left: 50px;
+position: fixed;
+justify-content: left;
 }
 
-.title-box h1, h2{
+#landingPageContentBox h1, h2, p{
   font-family: sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 300;
-  font-size: 5em;
+  font-size: 3em;
 }
 
-.title-box h2 {
+#landingPageContentBox h2 {
   font-size:1.25em;
 }
 
-.pic1 {
-  background-color: white;
-  border: ;
-  background-image: url("http://i1262.photobucket.com/albums/ii616/paulmartin91/IMG_6889_zpssyah8fi1.jpg");
-    background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
-  max-height: 100vh;
-  background-position: center;
-  background-size: cover;
-  margin-left: 0px;
+#landingPageContentBox p {
+  font-size:1em;
 }
 
-.text1 {
-  height: 600px;
-  border: ;
-  padding-left: 10px;
-}
 
-.about {
-  text-align: center;
-  max-width: 1000px;
-  margin: auto;
-  font-size: 1.8em;
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
+/*Media Queries*/
 
-.about h1 {
- font-weight: normal;
-}
-  
-.text2 {
-  height: 200px;
-  background-color: white;
-  border: ;
-}
-
-.pic2 {
-  border: ;
-  min-height: 700px;
-}
-
-.projects-all {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-  max-width: 1160px;
-  margin: auto;
-   background-color: rgba(234, 231, 232, 1);
-  margin-bottom: 100px;
-}
-
-.projects-main {
-  height: 380px;
-  width: 350px;
-  background-color: white;
-  border: ;
-  margin: 50px 0px 50px 0px;
-}
-
-.projects-pic {
-  height: 160px;
-  width: 100%;
-  background-color: white;
-  overflow: hidden;
-  border-bottom: ;
-}
-
-.projects-pic img {
-  transition: 0.4s;
-}
-  
-.projects-pic img:hover {
-    transform: scale(1.2); 
-}
-
-.projects-buffer {
-  height: 10px;
-  width: 100%;
-  background-color: white;
-  border: ;
-}
-
-.project-tile {
-  height: 100px;
-  width: 100%;
-  padding-top: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border: ;
-  font-size: 1em;
-}
-
-#test {
-    background-image: url("https://i.imgur.com/tI74vi9.jpg");
-}
-
-.text3 {
-  background-color: white;
-  border: ;
-    background-image: url("http://i1262.photobucket.com/albums/ii616/paulmartin91/IMG_9701_zps7nycwjou.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-background-position: center;
-  background-size: cover;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 0px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-.contact-form {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-  color: white;
-  font-size: 1.5em;
-} 
-
-	#input {
-		background-color: white; 
-		color: black;
-    font-size: 1em;
-	}
-
-.footer {
-  height: 200px;
-  background-color: white;
-  border: ;
-}
-
-@media (max-width: 600px){
-  .footer {
-  height: 200px;
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
