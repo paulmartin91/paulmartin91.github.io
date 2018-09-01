@@ -14,12 +14,17 @@
 
 <body>
 
-  <!-- Side Navigation -->
+  <!-- Start Text Process after 1.5 seconds of page load -->
+<body onLoad ="setTimeout(function(){start(textTypeGag)}, 1500)">
+
+<!-- Side Navigation -->
 
 <div id="mySidenav" class="sidenav">
-  <a id="arrow" href="#" onclick="toggleNav()">↓</a>
-  <a href="#" onclick="openNav()">Projects</a>
+  <a href="#" onclick="toggleNav()" id="arrow">↓
+    Projects</a>
   
+
+
 </div>
 
 <!-- Landing Page -->
@@ -31,12 +36,14 @@
 <div id ="landingPageContent">
   <div id ="landingPageContentBox">
     <h1>Paul Martin</h1>
-    <h2> WEB DESIGN<br>FRONT-END DEVELOPMENT<br>PHOTOGRAPHY</h2>
+    <h2> WEB DESIGN<br>FRONT-END DEVELOPMENT<br>PHOTOGRAPHY<br><span id="textTypeGag"></span>&nbsp</h2>
     <br><hr><br><p>A creative, driven, self-taught front end developer who specialises in writing clean, efficiant HTML, CSS and JavaScript code. I have a great track record of working both in a team and individually to tight deadlines in high-pressure work environments.
  </p>
   </div>  
   </div>
 </div>
+
+</body>
   
   
 
