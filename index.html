@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>A Pen by  Paul Martin</title>
+  <title>Portfolio Page Flex</title>
   
   
   
@@ -11,40 +11,161 @@
 
   
 </head>
-
+    
 <body>
 
   <!-- Start Text Process after 1.5 seconds of page load -->
-<body onLoad ="setTimeout(function(){start(textTypeGag)}, 1500)">
+<body onLoad ="setTimeout(function(){start(textTypeGag, text1)}, 1500)">
 
+<!-- Head -->
+<head>
+<link id="pagestyle" href="" rel="stylesheet" type="text/css" />
+  </head>
+  
+<!-- Preloading Background Images -->
+  <div id="preloadxx321">
+<img src="Images/BG1.jpg" />
+<img src="Images/BG2.jpg" />
+<img src="Images/BG3.jpg" />
+<img src="Images/BG4.jpg" />
+<img src="Images/BG5.jpg" />
+<img src="Images/BG6.jpg" />
+<img src="Images/BG7.jpg" />
+<img src="Images/BG8.jpg" />
+<img src="Images/BG9.jpg" />
+<img src="Images/BG10.jpg" />
+<img src="Images/BG11.jpg" />
+<img src="Images/BG12.jpg" />
+<img src="Images/BG13.jpg" />
+<img src="Images/BG14.jpg" />
+</div>
+
+  
 <!-- Side Navigation -->
 
 <div id="mySidenav" class="sidenav">
-  <a href="#" onclick="toggleNav()" id="arrow">↓
-    Projects</a>
+<!-- Projects arrow -->
+    <div>
+ <div id = "arrowFade">
+  <a1 href="#" onclick="toggleNav(this)" id="arrow">↓Projects</a1>
+ </div>
+ <div id = "arrowFade1">
+  <a1 href="#" onclick="toggleNav(this)" id="arrow1">↓Blog</a1>
+ </div>
+        </div>
+ 
+<!-- Main tab box -->    
+    
+    <div id = "tabMainBox">
+    
+    
+<!-- Blog -->
+    
+<div id = "blogMainBox">
+    
+</div>
+    
+<!-- Projects -->
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+
+<div id="projectsMainBox">
+ <div class="projectsNav"> 
+   <a href = "https://codepen.io/paulmartin91/pen/BVmRJM" id="button1" data-target="img1">Airpods Landing Page</a>
+   <a href = "https://codepen.io/paulmartin91/pen/QxZzjm" id="button2" data-target="img2">Flex-box Guide</a>
+   <a href = "https://codepen.io/paulmartin91/pen/BYYNMV" id="button3" data-target="img3">API Twitch Dashboard</a>
+   <a href = "https://codepen.io/paulmartin91/pen/jKVPOK" id="button4" data-target="img4">Star Wars Survey Form</a>
+   <a href = "https://codepen.io/paulmartin91/pen/PQGeJZ" id="button5" data-target="img5">Wikipedia Search API</a>
+   </div>
+ <div id="projectsDisplayBox">   
+      <div id="projectPlaceholder">
+  <a>My Projects...</a>
+        
+  </div>
+
+    <div class = "target" id="img1">
+        
+   <a href = "https://codepen.io/paulmartin91/pen/BVmRJM"><img src="https://i.imgur.com/e9gVcpm.png" width="100%" height="450px">
+   </a>
+
+  </div>
+   
+
+       <div class = "target"  id="img2">
+   <a href = "https://codepen.io/paulmartin91/pen/QxZzjm"><img src="https://i.imgur.com/oT6QGPe.png" width="100%" height="450px">
+   </a>
+
+  </div>  
+
+
+      <div id="img3" class = "target">
+   <a href = "https://codepen.io/paulmartin91/pen/BYYNMV"><img src="https://i.imgur.com/JguKkG7.png" width="100%" height="450px">
+   </a>
+
+  </div>  
+
+     <div id="img4" class = "target">
+   <a href = "https://codepen.io/paulmartin91/pen/jKVPOK"><img src="https://i.imgur.com/aY9dYbg.png" width="100%" height="450px">
+   </a>
+
+  </div> 
+
+     <div id="img5" class = "target">
+   <a href = "https://codepen.io/paulmartin91/pen/PQGeJZ"><img src="https://i.imgur.com/Q9antPJ.png" width="100%" height="450px">
+   </a>
+
+ </div>
+
+</div>
   
+</div>
 
+<!-- Projects Tab End-->
 
+</div>  <!-- Tab Main Box Tab End-->      
+        
 </div>
 
 <!-- Landing Page -->
-
+<div id="landingPageAll">
 <div id ="landingPagePhoto">
-<img src ="http://i1262.photobucket.com/albums/ii616/paulmartin91/IMG_6889_zpssyah8fi1.jpg">
 </div>
 
 <div id ="landingPageContent">
   <div id ="landingPageContentBox">
     <h1>Paul Martin</h1>
-    <h2> WEB DESIGN<br>FRONT-END DEVELOPMENT<br>PHOTOGRAPHY<br><span id="textTypeGag"></span>&nbsp</h2>
-    <br><hr><br><p>A creative, driven, self-taught front end developer who specialises in writing clean, efficiant HTML, CSS and JavaScript code. I have a great track record of working both in a team and individually to tight deadlines in high-pressure work environments.
- </p>
+    <h2>FRONT-END DEVELOPMENT<br>Computer programming<br>PHOTOGRAPHY<br><span id="textTypeGag"></span>&nbsp</h2>
+    <br><hr><br><p>A creative, driven, self-taught  developer, who specialises in writing clean, efficiant HTML, CSS and JavaScript code. currently learning C++.</p>
+    <br><hr><br>
+
+    <p>Get in Touch</p>
+    <a>Email: paulmartin91@hotmail.co.uk</a>
+    <div id="socialAll">
+      <div id="socialIcon">
+        <a img href="https://www.facebook.com/Paulimo" >
+  <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-512.png" width="100%"></img></a>
+    </div>
+      <div id="socialIcon">
+         <a href="#">
+  <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-512.png" width="100%"></img></a>
+    </div>
+         <div id="socialIcon">
+           <a href="#">
+  <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-512.png" width="100%"></img></a>
+    </div>
+  <div id="socialIcon">
+           <a href="#">
+  <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/linked_in_online_social_media-512.png" width="100%"></img></a>
+    </div>
   </div>  
+  </div>
   </div>
 </div>
 
 </body>
-  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
   
 
     <script  src="js/index.js"></script>

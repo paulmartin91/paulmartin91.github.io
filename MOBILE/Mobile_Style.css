@@ -22,7 +22,7 @@ body {
 
 #mySidenav {
   display: flex;
-  flex-direction: ;
+  justify-content: ;
 }
 
 #arrow {
@@ -33,33 +33,12 @@ body {
   margin-top: 100px;
 }
 
-/*All Tab*/
-
-#tabMainBox {
-    margin-top: 100px;
-    margin-left: 50px;
-
-    position: relative;
-}
-
-/*Blog Tab*/
-
-#blogMainBox {
-  position: absolute;
-  display: flex;
-  min-width: 1100px;
-  height: 520px;
-  margin: auto;
-  background-color: rgba(234, 231, 232, 1);
-  opacity: 0;
-}
-
 /*Projects Tab*/
 
+
 #projectsMainBox {
-  position: absolute;
   display: flex;
-  min-width: 1100px;
+  width: 800px;
   height: 520px;
   margin: auto;
   background-color: rgba(234, 231, 232, 1);
@@ -85,22 +64,22 @@ body {
 
 .projectsNav a:hover {
   color: #f1f1f1;
-  cursor: pointer;
+  cursor: default;
 }
 
 #projectsDisplayBox {
-  width: 800px;
-  height: 450px; 
+  width: 72%;
+  height: 76%;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 60px;
   overflow: hidden;
   position: relative;
 }
  
 #projectPlaceholder {
   position: absolute;
-  width: 800px;
-  height: 450px;
+  width: 100%;
+  height: 100%;
   display: flex;
   background-color: black;
   font-family: 'Sacramento';font-size: 22px;
@@ -137,28 +116,22 @@ body {
 
 #landingPageAll {
   width: 100%;
-  min-width: 1000px;
   margin-left: -50px;
-  height: 100vh;
+  height: 90vh;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
-      "a b";
+    "a" 
+    "b";
+
 }
 
 #landingPagePhoto {
   grid-area: a;
-  background-image: url('/../../Images/BG1.jpg');
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Elderly_Gambian_woman_face_portrait.jpg/1082px-Elderly_Gambian_woman_face_portrait.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: 500px;
-  transition: 2s;
-}
-
-#preloadxx321 {
-  display: none;
-  width: 0px;
-  height: 0px;
+  min-width: 100vw;
 }
 
 #landingPageContent {
@@ -166,12 +139,9 @@ body {
 }
 
 #landingPageContentBox {
-min-width: 350px;
-height: 500px;
-margin-top: 100px;
-margin-left: 50px;
+margin-top: 50px;
+margin-left: 100px;
 margin-right: 50px;
-justify-content: left;
 }
 
 #landingPageContentBox h1, h2, p{
@@ -183,24 +153,28 @@ justify-content: left;
 }
 
 #landingPageContentBox h2 {
-  font-size:1.25em;
+  font-size:1.8em;
 }
 
 #landingPageContentBox p {
-  font-size:1em;
+  font-size:1.8em;
+}
+
+#landingPageContentBox a {
+  font-size:1.5em;
 }
 
 #socialAll {
-  min-width: 350px;
+  max-width: 350px;
   height: 70px;
-  margin: auto;
-  padding-top: 60px;
+  margin-left: 60%;
+  margin-top: -100px;
   display: flex;
   justify-content: space-between;
-
 }
 
 #socialIcon {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
 }
+
