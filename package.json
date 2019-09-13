@@ -2,7 +2,7 @@
   "name": "portfolio-page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/paulmartin91/PortfolioPage",
+  "homepage": "https://paulmartin91.github.io/",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0",
