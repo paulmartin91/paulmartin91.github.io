@@ -1,0 +1,55 @@
+@mixin homefont{
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.contactHolder{
+    width: calc(100% - 50px);
+    height: 100vh;     
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: black;
+
+    .contact{
+        width: 700px;
+        height: 370px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        border: solid 1px;
+        border-color: white;
+        margin: auto;
+        border-radius: 20px;
+        @include homefont();
+    }
+
+        p{
+            font-size: 3em;
+            margin: 0px;
+            filter: saturate(0); 
+        }
+
+        a{
+           color: white; 
+        }
+
+    .socialAll{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .socialImages{
+        height: 100px; 
+        width: auto;
+        filter: invert(1);
+    }
+
+}
