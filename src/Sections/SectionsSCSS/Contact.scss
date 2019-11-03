@@ -6,13 +6,13 @@
 }
 
 .contactHolder{
-    width: calc(100% - 50px);
     height: 100vh;     
     flex-direction: column;
     justify-content: center;
     align-items: center;
     display: flex;
     background-color: black;
+    overflow: hidden;
 
     .contact{
         width: 700px;
@@ -27,7 +27,6 @@
         margin: auto;
         border-radius: 20px;
         @include homefont();
-    }
 
         p{
             font-size: 3em;
@@ -50,6 +49,50 @@
         height: 100px; 
         width: auto;
         filter: invert(1);
+    }
+    }   
+
+    .mobileContact{
+        width: 95%;
+        height: 370px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        border: solid 1px;
+        border-color: white;
+        border-radius: 20px;
+        @include homefont();
+
+        p{
+            font-size: 2em;
+            margin: 0px;
+            filter: saturate(0); 
+        }
+
+        p2{
+            font-size: 0.9em;
+            margin: 5px;
+            filter: saturate(0); 
+        }
+
+        a{
+           color: white; 
+        }
+
+    .socialAll{
+        height: 100px;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .socialImages{
+        height: 50px; 
+        width: auto;
+        filter: invert(1);
+    }
     }
 
 }

@@ -13,9 +13,9 @@ const Contact = (props) => {
         className='contactHolder'
         style={(props.sectionShow === "contact" && props.sideNavShow) ? {diplay: "flex"} : {display: "none"}}
         >
-        <div className = "contact">
+        <div className = {(props.isMobile) ? "mobileContact" : "contact"}>
             <p>Say Hi 👋</p>
-            <a>Email: <a href="mailto:pauledwardmartin91@gmail.com" >pauledwardmartin91@gmail.com</a></a>
+            <p2>Email: <a href="mailto:pauledwardmartin91@gmail.com" >pauledwardmartin91@gmail.com</a></p2>
         <div className = "socialAll">
             <img src={FCC} className="socialImages"/>
             <img src={Github} className="socialImages"/>

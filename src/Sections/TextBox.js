@@ -48,17 +48,20 @@ class TextBox extends React.Component{
     render(){
         return(
             <div  
-            className="homeText"
+            className={(this.props.isMobile) ? "mobileHomeText" : "homeText"}
             style={(this.props.sideNavShow) ? {opacity: 0.2} : {opacity: 1}}
           >
-            <h1>Paul Martin</h1>
+            <h1
+                style={(this.props.isMobile) ? {marginTop: 15, marginBottom: 0} : null}
+            >
+                Paul Martin</h1>
             <h2>Web Development <br /> Programming <br /> {this.state.textGag}&nbsp;</h2>
             <hr />
             <p>
-              A creative, driven, self-taught  developer, who specialises 
-              in writing clean, efficient HTML, CSS and JavaScript code.
+              A creative, driven, self-taught{(this.props.isMobile) && <br />}  developer, who specialises 
+              in {(this.props.isMobile) && <br />}writing clean, efficient HTML, {(this.props.isMobile) && <br />}CSS and JavaScript code.
             </p>      
-            <hr />
+            {(this.state.isMobile) && <hr />}
           </div>
         )
     }

@@ -9,35 +9,42 @@
 // Homepage
 .homeAll{
     width: 100vw;
+    min-width: 600px;
     height: 100vh;
-    display: flex;
     position: fixed;
     top: 0;
     left: 0;
     background-color: black;
 
+
     //Photos
     .homePhotos{
+        position: fixed;
+        top: 0;
         width: 65vw;
-        height: 100vh;
-        display: flex;
-        overflow: hidden;
+        height: 100%;
     }
 
     //Text on the right
     .homeText{
         width: 35vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        min-width: 500px;
         height: 100vh;
         display: flex;
         color: white;
         flex-direction: column;
         padding-left: 40px;
         padding-right: 40px;
+        background-color: black;
 
         h1{
             margin-top: 150px;
             font-size: 3em;
-            @include homefont()
+            @include homefont();
         }
 
         h2{
@@ -54,6 +61,47 @@
             width: 100%;
             margin-top: 20px;
             margin-bottom: 20px;
+        }
+
+    }
+
+    //mobile version
+
+    .mobileHomeText{
+        width: 100vw;
+        position: absolute;
+        font-size: 90%;
+        top: 45%;
+        left: 0;
+        z-index: 1;
+        min-width: 500px;
+        height: 50%;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color: black;
+
+        h1{
+            margin-top: 150px;
+            font-size: 3em;
+            @include homefont();
+        }
+
+        h2{
+            @include homefont();
+            font-size: 1.5em;
+        }
+
+        p{
+            @include homefont();
+            font-size: 1em;
+        }
+
+        hr{
+            width: 60%;
+            margin-left: 0px;
         }
 
     }
@@ -83,6 +131,24 @@
 
             a{
                 transform: rotate(-90deg);
+                cursor: default;
+            }
+        }
+
+        //optimised for mobile
+        .mobileNavigationTabs{
+            position: fixed;
+            bottom: 0px;
+            font-size: 70%;
+            width: 100vw;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+
+            a{
                 cursor: default;
             }
         }

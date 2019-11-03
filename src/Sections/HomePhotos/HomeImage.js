@@ -27,32 +27,39 @@ class HomeImage extends React.Component {
 
     render(){
     return(
-        <section>
-            <img 
-                className="currentPhoto" 
-                src={this.state.currentPhoto} 
-                alt="ERROR"
+        <div 
+        className = "homePhotos"
+        style={(this.props.isMobile) ? {width: "100vw", height: "50%"} : null}
+        >
+            <div 
                 style={{
+                    backgroundImage: "url("+this.state.currentPhoto+")",
                     position: "absolute",
-                    zIndex: -5,
+                    zIndex: "-5",
                     opacity: (this.state.opacity) ? 1 : 0,
                     transition: "2s",
-                    width: "65vw"
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    width: "100%",
+                    height: "100%",
+                    top: "0",
                 }}
                 />
-            <img 
-                className="nextPhoto" 
-                src={this.state.nextPhoto} 
-                alt="ERROR"
+            <div 
                 style={{
+                    backgroundImage: "url("+this.state.nextPhoto+")",
                     position: "absolute",
-                    zIndex: -5,
+                    zIndex: "-5",
                     opacity: (!this.state.opacity) ? 1 : 0,
                     transition: "2s",
-                    width: "65vw"
+                    width: "100%",
+                    height: "100%",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    top: "0",
                 }}
                 />    
-        </section>
+        </div>
     )
     }
 }

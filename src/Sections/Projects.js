@@ -10,7 +10,8 @@ const Projects = (props) => {
             className='projectHolder'
             style={(props.sectionShow === "projects" && props.sideNavShow) ? {diplay: "flex"} : {display: "none"}}
             >
-                <div className="projectCardHolder">
+                <div 
+                className={(props.isMobile) ? "mobileProjectCardHolder" : "projectCardHolder"}>
                     <div className="projectTitle">
                         <h2>Projects</h2>
                     </div>
