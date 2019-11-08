@@ -9,9 +9,9 @@ import LinkedIn from './ContactImages/LinkedIn.png'
 
 const Contact = (props) => {
     return(
+        (props.compRender && props.sectionShow === "contact") &&
         <section 
         className='contactHolder'
-        style={(props.sectionShow === "contact" && props.sideNavShow) ? {diplay: "flex"} : {display: "none"}}
         >
         <div className = {(props.isMobile) ? "mobileContact" : "contact"}>
             <p>Say Hi 👋</p>

@@ -6,9 +6,9 @@ import ProjectsInfo from './ProjectsInfo';
 const Projects = (props) => {
 
         return(
+            (props.compRender && props.sectionShow === "projects") &&
             <section 
             className='projectHolder'
-            style={(props.sectionShow === "projects" && props.sideNavShow) ? {diplay: "flex"} : {display: "none"}}
             >
                 <div 
                 className={(props.isMobile) ? "mobileProjectCardHolder" : "projectCardHolder"}>

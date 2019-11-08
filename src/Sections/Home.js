@@ -13,19 +13,31 @@ class Home extends React.Component{
         sideNavShow: false,
         sectionShow: '',
         isMobile: false,
+        compRender: false,
     }
     this.handleClick = this.handleClick.bind(this)
   }
 
   handleClick(event){
-
     //Toggle showing the sidebar
     let tabName = event.target.name
         this.setState(prevState => ({
             sideNavShow: !prevState.sideNavShow,
-            sectionShow: tabName
         }));
+
+    if (!this.state.compRender) {
+      console.log("Render Component")
+      this.setState(prevState => ({ 
+        compRender: !prevState.compRender,
+        sectionShow: tabName,
+      }))
+    } else {
+      setTimeout(()=>{ 
+        console.log("Hide Component")
+        this.setState(prevState => ({ compRender: !prevState.compRender }))
+      }, 1000)
     }
+  } 
 
     componentDidMount(){
       //Check if mobile
@@ -53,9 +65,9 @@ class Home extends React.Component{
                  style={(this.state.sideNavShow) ? (this.state.isMobile) ? {width: "100vw", left: "0px",} : {width: "90vw", left: "0px",} : null}>
 
           {/* Sections */}
-           <About sectionShow={this.state.sectionShow} sideNavShow={this.state.sideNavShow} isMobile={this.state.isMobile}/>
-           <Projects sectionShow={this.state.sectionShow} sideNavShow={this.state.sideNavShow} isMobile={this.state.isMobile}/>
-           <Contact sectionShow={this.state.sectionShow} sideNavShow={this.state.sideNavShow} isMobile={this.state.isMobile}/>
+           <About sectionShow={this.state.sectionShow} sideNavShow={this.state.sideNavShow} isMobile={this.state.isMobile} compRender={this.state.compRender}/>
+           <Projects sectionShow={this.state.sectionShow} sideNavShow={this.state.sideNavShow} isMobile={this.state.isMobile} compRender={this.state.compRender}/>
+           <Contact sectionShow={this.state.sectionShow} sideNavShow={this.state.sideNavShow} isMobile={this.state.isMobile} compRender={this.state.compRender}/>
 
           {/* Navigation Tabs */}
             <div 

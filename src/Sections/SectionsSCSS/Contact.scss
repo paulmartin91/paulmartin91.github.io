@@ -54,7 +54,7 @@
     }   
 
     .mobileContact{
-        width: 95%;
+        min-width: 95vw;
         height: 370px;
         display: flex;
         flex-direction: column;
@@ -69,12 +69,13 @@
         p{
             font-size: 2em;
             margin: 0px;
-            filter: saturate(0); 
+            filter: saturate(0);
         }
 
         p2{
-            font-size: 0.9em;
+            font-size: 0.8em;
             margin: 5px;
+            white-space: nowrap;
             filter: saturate(0); 
         }
 

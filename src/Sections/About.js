@@ -4,10 +4,10 @@ import MyPhoto from './MyPhoto/Paul.jpeg';
 
 const About = (props) => {
     return(
+        (props.compRender && props.sectionShow === "about") &&
         <section 
             className= 'aboutHolder'
-            style={(props.sectionShow === "about" && props.sideNavShow) ? {diplay: "flex"} : {display: "none"}}
-        >
+            >
             <div 
                 className={(props.isMobile) ? 'mobileAbout' : 'about'}
             >
@@ -92,7 +92,7 @@ const About = (props) => {
                 }
             </div>
         </ section>
-    )
+        )
 }
 
 export default About

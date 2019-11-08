@@ -25,7 +25,7 @@ class TextBox extends React.Component{
                     letterCount++;
                 } else {
                     clearInterval(startTyping)
-                    console.log("Typing Finished")
+                    //console.log("Typing Finished")
                     setTimeout(()=>{
                         const back = setInterval(()=>{
                             if (letterCount > 0) {
@@ -35,7 +35,7 @@ class TextBox extends React.Component{
                                 clearInterval(back) 
                                 phraseCount++
                                 setTimeout(()=>{start()}, 500);
-                                console.log("Deleting Finished")
+                                //console.log("Deleting Finished")
                                 }
                             }, 100)
                         }, phrases[phraseCount][1])

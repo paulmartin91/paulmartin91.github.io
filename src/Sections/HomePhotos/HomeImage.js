@@ -18,7 +18,7 @@ class HomeImage extends React.Component {
                 opacity: !prevState.opacity
             }))
             setTimeout(()=>{
-                console.log(counter);
+                //console.log(counter);
                 (!this.state.opacity) ? this.setState({currentPhoto: HomePhotos[counter].image}) : this.setState({nextPhoto: HomePhotos[counter].image});
                 (counter===11) ? counter = 0 : counter++;
             }, 4000)
