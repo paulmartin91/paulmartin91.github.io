@@ -12,7 +12,7 @@ const About = (props) => {
                 className={(props.isMobile) ? 'mobileAbout' : 'about'}
             >
                 <div className="aboutTop">
-                    <img className="aboutPic" src={MyPhoto}/>
+                    <img className="aboutPic" src={MyPhoto} alt="Paul"/>
                     <h1>← Paul Martin</h1>
                 </div>
                 {(props.isMobile) ? 

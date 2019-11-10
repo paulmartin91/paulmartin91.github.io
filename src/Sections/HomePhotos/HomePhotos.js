@@ -1,4 +1,3 @@
-import React from 'react';
 import BG1 from './BG1.png';
 import BG2 from './BG2.png';
 import BG3 from './BG3.png';

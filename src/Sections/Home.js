@@ -1,10 +1,11 @@
 import React from 'react';
 import './SectionsSCSS/Home.scss';
-import About from './About.js'
-import Projects from './Projects.js'
-import Contact from './Contact.js'
-import HomeImage from './HomePhotos/HomeImage.js'
-import TextBox from './TextBox.js'
+import About from './About.js';
+import Projects from './Projects.js';
+import Contact from './Contact.js';
+import HomeImage from './HomePhotos/HomeImage.js';
+import TextBox from './TextBox.js';
+import Navigation from './Navigation';
 
 class Home extends React.Component{
   constructor(props){
@@ -14,6 +15,7 @@ class Home extends React.Component{
         sectionShow: '',
         isMobile: false,
         compRender: false,
+        waiting: false,
     }
     this.handleClick = this.handleClick.bind(this)
   }
@@ -25,16 +27,20 @@ class Home extends React.Component{
             sideNavShow: !prevState.sideNavShow,
         }));
 
+    //if sidebar is closed, render the component straight away
     if (!this.state.compRender) {
-      console.log("Render Component")
       this.setState(prevState => ({ 
         compRender: !prevState.compRender,
         sectionShow: tabName,
       }))
+    //if sidebar is open, wait 1s, then stop rendering component / nav buttons disabled during delay
     } else {
+      this.setState({waiting: true});
       setTimeout(()=>{ 
-        console.log("Hide Component")
-        this.setState(prevState => ({ compRender: !prevState.compRender }))
+        this.setState(prevState => ({ 
+          compRender: !prevState.compRender,
+          waiting: false,
+         }))
       }, 1000)
     }
   } 
@@ -70,20 +76,7 @@ class Home extends React.Component{
            <Contact sectionShow={this.state.sectionShow} sideNavShow={this.state.sideNavShow} isMobile={this.state.isMobile} compRender={this.state.compRender}/>
 
           {/* Navigation Tabs */}
-            <div 
-              className={(this.state.isMobile) ? "mobileNavigationTabs" : "navigationTabs"}
-            >
-                <a 
-                onClick={this.handleClick} 
-                name="about">{!this.state.sideNavShow && "About"}
-                </a>
-                <a 
-                onClick={this.handleClick}
-                name="projects">{(this.state.sideNavShow) ? "Home" : "Projects"}
-                </a>
-                <a onClick={this.handleClick} name="contact">{!this.state.sideNavShow && "Contact"}</a>
-            </div>
-
+          <Navigation isMobile={this.state.isMobile} waiting={this.state.waiting} handleClick={this.handleClick} sideNavShow={this.state.sideNavShow} />
         </div> 
         </div>
     </ section>
