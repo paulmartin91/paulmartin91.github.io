@@ -19,6 +19,7 @@ const Projects = (props) => {
                             <ProjectCard 
                             name = {x.name}
                             image = {x.image}
+                            description = {x.description}
                             used = {x.used}
                             url = {x.url}
                             />

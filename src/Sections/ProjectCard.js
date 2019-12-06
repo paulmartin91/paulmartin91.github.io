@@ -3,8 +3,20 @@ import React from 'react'
 const ProjectCard = (props) => {
     return(
         <div className="projectCard">
-            <img src={props.image} alt={props.name}/>
-            <div className="projectUsed">{props.used.map(x=><img src={x} alt={"TEMP"} style={{height: "40px", width: "auto"}}></img>)}</div>
+            <a href={props.url} target="_blank">
+                <div className="projectHover">
+                    <h1>{props.name}</h1>
+                    <p>{props.description}</p>
+                </div>
+                <img src={props.image} alt={props.name} />
+            </a>
+            <div 
+                className="projectUsed"
+            >
+                {props.used.map(x=>
+                    <img src={x} alt={"TEMP"} style={{height: "40px", width: "auto"}} />
+                )}
+            </div>
         </div>
     )
 }
