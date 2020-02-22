@@ -41,7 +41,7 @@ class Home extends React.Component{
           compRender: !prevState.compRender,
           waiting: false,
          }))
-      }, 1000)
+      }, 200)
     }
   } 
 

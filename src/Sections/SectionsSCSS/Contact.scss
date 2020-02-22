@@ -7,16 +7,17 @@
 
 .contactHolder{
     height: 100vh;
-    width: 100vw;     
+    width: 100%;     
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     display: flex;
-    background-color: black;
+    justify-content: center;
+    //background-color: green;
     overflow: hidden;
-
+    
+    
     .contact{
         width: 700px;
+        margin: auto;
         height: 370px;
         display: flex;
         flex-direction: column;
@@ -24,19 +25,18 @@
         justify-content: space-around;
         align-items: center;
         border: solid 1px;
+        //background-color: red;
         border-color: white;
-        margin: auto;
         border-radius: 20px;
         @include homefont();
-
+        
         p{
             font-size: 3em;
-            margin: 0px;
             filter: saturate(0); 
         }
 
         a{
-           color: white; 
+        color: white; 
         }
 
     .socialAll{
@@ -51,7 +51,7 @@
         width: auto;
         filter: invert(1);
     }
-    }   
+}   
 
     .mobileContact{
         min-width: 95vw;

@@ -13,7 +13,7 @@ const About = (props) => {
             >
                 <div className="aboutTop">
                     <img className="aboutPic" src={MyPhoto} alt="Paul"/>
-                    <h1>← Paul Martin</h1>
+                    <h1>←Paul Martin</h1>
                 </div>
                 {(props.isMobile) ? 
                 //mobile
@@ -58,21 +58,21 @@ const About = (props) => {
                 //non Mobile 
                 <div className="aboutBottom">
                     <div className = "amSkills">
-                        <h1>Pretty good at...</h1>
+                        <h1>Key Skills...</h1>
                         <li>+ HTML/CSS</li>
                         <li>+ Javascript</li>
                         <li>+ React</li>
+                        <li>+ Node JS</li>
+                        <li>+ Express</li>
+                        <li>+ Mongo DB</li>
+                        <li>+ Web design</li>
                         <li>+ Photoshop</li>
                         <li>+ Photography</li>
-                        <li>+ Digital marketing</li>
-                        <li>+ Web design</li>
                         <li>+ Video Editing</li>
-                        <br />
                         <h1>Still learning...</h1>
                         <li>+ C++</li>
                         <li>+ Redux</li>
                         <li>+ Swift</li>
-                        <li>+ Node JS</li>
                     </div>
                     <div className="aboutText">
                         <h1>About Me</h1>
