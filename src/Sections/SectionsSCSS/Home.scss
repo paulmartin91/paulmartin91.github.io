@@ -125,7 +125,7 @@
         display: flex;
         color: white;
         @include homefont();
-        transition: 200ms;
+        transition: 500ms;
         background-color: black;
         
         .navigationTabs{
