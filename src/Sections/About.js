@@ -34,23 +34,23 @@ const About = (props) => {
                     </div>
                     <div className = "amSkills amSkillsHolder">
                         <div>
-                            <h1>Pretty good at...</h1>
-                            <li>+ HTML/CSS</li>
-                            <li>+ Javascript</li>
-                            <li>+ React</li>
-                            <li>+ Photoshop</li>
-                            <li>+ Photography</li>
-                            <li>+ Digital marketing</li>
-                            <li>+ Web design</li>
-                            <li>+ Video Editing</li>
+                        <h1>Key Skills...</h1>
+                        <li>+ HTML/CSS</li>
+                        <li>+ Javascript</li>
+                        <li>+ React</li>
+                        <li>+ Node JS</li>
+                        <li>+ Express</li>
+                        <li>+ Mongo DB</li>
+                        <li>+ Web design</li>
+                        <li>+ Photoshop</li>
+                        <li>+ Photography</li>
+                        <li>+ Video Editing</li>
                         </div>
                         <br />
                         <div>
-                            <h1>Still <br /> learning...</h1>
-                            <li>+ C++</li>
-                            <li>+ Redux</li>
-                            <li>+ Swift</li>
-                            <li>+ Node JS</li>
+                        <h1>Currently learning...</h1>
+                        <li>+ C++</li>
+                        <li>+ Redux</li>
                         </div>
                     </div>
                 </div>
@@ -69,10 +69,9 @@ const About = (props) => {
                         <li>+ Photoshop</li>
                         <li>+ Photography</li>
                         <li>+ Video Editing</li>
-                        <h1>Still learning...</h1>
+                        <h1>Currently learning...</h1>
                         <li>+ C++</li>
                         <li>+ Redux</li>
-                        <li>+ Swift</li>
                     </div>
                     <div className="aboutText">
                         <h1>About Me</h1>

@@ -6,6 +6,7 @@ import Contact from './Contact.js';
 import HomeImage from './HomePhotos/HomeImage.js';
 import TextBox from './TextBox.js';
 import Navigation from './Navigation';
+import { BackHandler } from 'react';
 
 class Home extends React.Component{
   constructor(props){
@@ -18,6 +19,15 @@ class Home extends React.Component{
         waiting: false,
     }
     this.handleClick = this.handleClick.bind(this)
+  }
+
+  componentDidMount() {
+    window.onpopstate = this.onBackButtonEvent;
+  }
+
+  onBackButtonEvent(e) {
+    e.preventDefault();
+   console.log('back');
   }
 
   handleClick(event){

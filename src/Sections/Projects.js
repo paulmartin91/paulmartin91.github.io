@@ -11,7 +11,8 @@ const Projects = (props) => {
             className='projectHolder'
             >
                 <div 
-                className={(props.isMobile) ? "mobileProjectCardHolder" : "projectCardHolder"}>
+                // className={(props.isMobile) ? "mobileProjectCardHolder" : "projectCardHolder"}>
+                className= "projectCardHolder">
                     <div className="projectTitle">
                         <h2>Projects</h2>
                     </div>

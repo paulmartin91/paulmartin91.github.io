@@ -103,6 +103,7 @@
     display: flex;
     flex-wrap: wrap;
     overflow: scroll;
+    margin: 5px;
 
     .aboutTop{
         height: 200px;
@@ -116,8 +117,8 @@
 
         h1{
             @include homefont();
-            font-size: 2em;
-            padding-left: 50px;
+            font-size: 3em;
+            padding-left: 20px;
         }
 
     }
@@ -125,7 +126,7 @@
     .aboutBottom{
         display: flex;
         flex-direction: column;
-        margin-bottom: 150px;
+        margin-bottom: 120px;
 
         .aboutText {
             width: 100vw;
@@ -145,7 +146,7 @@
         flex-wrap: nowrap;
         font-size: 80%;
         justify-content: space-around;
-        width: 90%;
+        width: 100%;
 
         .amSkills {
             display: flex;
