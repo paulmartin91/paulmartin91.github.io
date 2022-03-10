@@ -2,12 +2,38 @@ import React from 'react';
 import './SectionsSCSS/About.scss';
 import MyPhoto from './MyPhoto/Paul.jpeg';
 
+const aboutMeText = () =>
+    <p>
+        In October 2017 I made my first "Hello World" appear and I've been obsessed with 
+        writing code ever since. I currently divide my time between working as a Python Developer and
+        as a Documentary Acquisitions Manager.
+    <br /><br />
+        I love programming, writing, designing and anything else that combines open ended challenges 
+        with creative thinking. When I'm not writing code, I'm probably playing golf with my friends, 
+        watching action movies or taking photos on my DSLR.
+    </p>
+
+const keySkills = () => 
+    <div>
+        <h1>Key Skills...</h1>
+        <li>+ HTML/CSS</li>
+        <li>+ Javascript</li>
+        <li>+ React</li>
+        <li>+ Node.js</li>
+        <li>+ Express</li>
+        <li>+ Mongo DB</li>
+        <li>+ SQL</li>
+        <li>+ Python</li>
+        <li>+ PostgreSQL</li>
+        <li>+ Web design</li>
+        <li>+ Photoshop</li>
+        <li>+ Photography</li>
+        <li>+ Video Editing</li>
+    </div>
+
 const About = (props) => {
-    return(
-        (props.compRender && props.sectionShow === "about") &&
-        <section 
-            className= 'aboutHolder'
-            >
+    return((props.compRender && props.sectionShow === "about") &&
+        <section className='aboutHolder'>
             <div 
                 className={(props.isMobile) ? 'mobileAbout' : 'about'}
             >
@@ -20,72 +46,21 @@ const About = (props) => {
                 <div className="aboutBottom">
                     <div className="aboutText">
                         <h1>About Me</h1>
-                        <p>
-                        In October 2017 I made my first "Hello World" appear and I've been obsessed with 
-                        writing code ever since. I love programming, writing, designing and anything else 
-                        that combines open ended challenges with creative thinking. 
-                        <br /><br />
-                        My speciality is front-end web development, but I have a fascination with low level 
-                        languages and I've managed to squeeze learning C++ into the last remaining hours of 
-                        my day, while working full time in television production. When I'm not writing code, 
-                        I'm probably playing golf with my friends, watching action movies or taking 
-                        photos on my DSLR.
-                        </p>
+                        {aboutMeText()}
                     </div>
                     <div className = "amSkills amSkillsHolder">
-                        <div>
-                        <h1>Key Skills...</h1>
-                        <li>+ HTML/CSS</li>
-                        <li>+ Javascript</li>
-                        <li>+ React</li>
-                        <li>+ Node JS</li>
-                        <li>+ Express</li>
-                        <li>+ Mongo DB</li>
-                        <li>+ Web design</li>
-                        <li>+ Photoshop</li>
-                        <li>+ Photography</li>
-                        <li>+ Video Editing</li>
-                        </div>
-                        <br />
-                        <div>
-                        <h1>Currently learning...</h1>
-                        <li>+ C++</li>
-                        <li>+ Redux</li>
-                        </div>
+                        {keySkills()}
                     </div>
                 </div>
                 :
                 //non Mobile 
                 <div className="aboutBottom">
                     <div className = "amSkills">
-                        <h1>Key Skills...</h1>
-                        <li>+ HTML/CSS</li>
-                        <li>+ Javascript</li>
-                        <li>+ React</li>
-                        <li>+ Node JS</li>
-                        <li>+ Express</li>
-                        <li>+ Mongo DB</li>
-                        <li>+ Web design</li>
-                        <li>+ Photoshop</li>
-                        <li>+ Photography</li>
-                        <li>+ Video Editing</li>
-                        <h1>Currently learning...</h1>
-                        <li>+ C++</li>
-                        <li>+ Redux</li>
+                       {keySkills()}
                     </div>
                     <div className="aboutText">
                         <h1>About Me</h1>
-                        <p>
-                        In October 2017 I made my first "Hello World" appear and I've been obsessed with 
-                        writing code ever since. I love programming, writing, designing and anything else 
-                        that combines open ended challenges with creative thinking. 
-                        <br /><br />
-                        My speciality is front-end web development, but I have a fascination with low level 
-                        languages and I've managed to squeeze learning C++ into the last remaining hours of 
-                        my day, while working full time in television production. When I'm not writing code, 
-                        I'm probably playing golf with my friends, watching action movies or taking 
-                        photos on my DSLR.
-                        </p>
+                        {aboutMeText()}
                     </div>
                 </div>
                 }
